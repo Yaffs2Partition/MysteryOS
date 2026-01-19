@@ -12,7 +12,6 @@ int main() {
     char *argv[MAX_ARGS];
     int argc;
 
-    // Initialize kernel and UI
     kernel_init();
     ui_init();
 
@@ -22,13 +21,12 @@ int main() {
         if (!fgets(input, sizeof(input), stdin))
             break;
 
-        // Remove newline
-        input[strcspn(input, "\n")] = 0;
+        input[strcspn(input, "\n")] = 0; // remove newline
 
         if (strlen(input) == 0)
             continue;
 
-        // Split input into arguments
+        // parse input
         argc = 0;
         char *token = strtok(input, " ");
         while (token != NULL && argc < MAX_ARGS) {
@@ -36,7 +34,6 @@ int main() {
             token = strtok(NULL, " ");
         }
 
-        // Execute command
         execute_command(argc, argv);
     }
 

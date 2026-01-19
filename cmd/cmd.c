@@ -1,7 +1,8 @@
-#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "cmd.h"
+
 
 void execute_command(int argc, char *argv[]) {
     if (strcmp(argv[0], "help") == 0) cmd_help(argc, argv);
@@ -16,6 +17,9 @@ void execute_command(int argc, char *argv[]) {
     else if (strcmp(argv[0], "file") == 0) cmd_file(argc, argv);
     else if (strcmp(argv[0], "find") == 0) cmd_find(argc, argv);
     else if (strcmp(argv[0], "rm") == 0) cmd_rm(argc, argv);
+    else if (strcmp(argv[0], "cat") == 0) cmd_cat(argc, argv);
+    else if (strcmp(argv[0], "mynano") == 0) cmd_mynano(argc, argv);
+    else if (strcmp(argv[0], "mystery") == 0) cmd_mystery(argc, argv);
     else if (strcmp(argv[0], "exit") == 0) exit(0);
     else printf("Unknown command\n");
 }
