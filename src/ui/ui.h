@@ -1,10 +1,11 @@
 #ifndef UI_H
 #define UI_H
 
-void ui_init(void);
-void ui_print(const char* text);
-void ui_input(char* buffer, int size);
-void ui_clear(void);
+// Initialize the UI
+void ui_init();
+
+// Print the terminal prompt
+void print_prompt();
 
 #endif
 
