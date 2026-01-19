@@ -3,7 +3,7 @@
 ### What is MysteryOS?
 MysteryOS is a terminal-like OS that runs in the Linux terminal
 
-## Version
+## Latest Version
 **v0.1-alpha** — terminal-only prototype
 
 ## Overview
