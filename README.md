@@ -1,15 +1,7 @@
-# MysteryOS Version 0.2
+# MysteryOS 
 
-# New commands
-- echo
-- ver
-- grep
-- ls
-- cd
-- mkdir
-- touch
-- file
-- find
-- rm
+## What is MysteryOS?
+- MysteryOS is a terminal-like OS that runs in the Linux terminal
+- ( Will be a separate window in future versions. )
 
-#  Fixed some unseen bugs
+## MysteryOS current version: Version 0.2
